@@ -10,5 +10,18 @@ formSubmit.addEventListener("submit", (e) => {
     // console.log("Submitted")
 
     let billValue = document.querySelector("#billAmount")
+    console.log("Bill Value ",billValue.value)
+
+    let radioValue = null
+
+    let tenPercent = document.querySelector("#tenChoice")
+    let fifteenPercent = document.querySelector("#fifteenChoice")
+    let twentyPercent = document.querySelector("#twentyChoice")
+    let customPercent = document.querySelector("#custom")
+
+    if(tenPercent.checked) {
+        radioValue = 10;
+        console.log("Radio Value: ",radioValue)
+    }
 
 })
