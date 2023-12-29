@@ -22,6 +22,8 @@ formSubmit.addEventListener("submit", (e) => {
     if(tenPercent.checked) {
         radioValue = 10;
         console.log("Radio Value: ",radioValue)
+    }else if(){
+        
     }
 
 })

@@ -55,7 +55,7 @@ form h3{
 
 form button{
     margin-top: 10px;
-    margin-left: 90px;
+    /*margin-left: 90px;*/
 }
 
 .radios{
@@ -76,5 +76,12 @@ button{
     min-width: 100px;
 }
 
+#buttons-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
 
