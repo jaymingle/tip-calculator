@@ -10,6 +10,56 @@
     <div class="outer_container">
         <div class="inner_container">
             <h2>Tip Calculator</h2>
+            <form>
+                <div class="form_details">
+                    <label for="billAmount">Please Enter Bill</label>
+                    <input type="number" name="bill" id="billAmount" placeholder="Please Enter Bill" required>
+                </div>
+
+                    <h3>Select Tip Percentage</h3>
+
+                <div class="the-group">
+                    <div class="radios">
+                        <input type="radio" id="tenChoice" name="tip" value="10">
+                        <label for="tenChoice">10%</label>
+                    </div>
+
+                    <div class="radios">
+                        <input type="radio" id="fifteenChoice" name="tip" value="15">
+                        <label for="fifteenChoice">15%</label>
+                    </div>
+
+                    <div class="radios">
+                        <input type="radio" id="twentyChoice" name="tip" value="20">
+                        <label for="twentyChoice">20%</label>
+                    </div>
+
+                    <div class="radios">
+                        <input type="radio" id="custom" name="tip" value="20">
+                        <label for="custom">Custom Tip</label>
+                    </div>
+                </div>
+
+                <div class="form_details">
+                    <label for="numberOfPeople">Number of People</label>
+                    <input type="number" id="numberOfPeople">
+                </div>
+
+                <button>Calculate Tip</button>
+            </form>
+            <div>
+                <p>Rating</p>
+
+            </div>
+            <div>
+                <h3>Total Bill (with tip)</h3>
+                <p></p>
+            </div>
+            <div>
+                <h3>Cost per person</h3>
+            </div>
+            <button>Reset</button>
+
         </div>
     </div>
 
