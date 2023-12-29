@@ -1,5 +1,4 @@
 console.log("Tip calculator")
-let billValue = document.querySelector("#billAmount")
 
 // document.querySelector("#theTestButton").onclick = function(e){
 //     console.log(billValue.value)
@@ -7,5 +6,9 @@ let billValue = document.querySelector("#billAmount")
 
 let formSubmit = document.querySelector("#theForm")
 formSubmit.addEventListener("submit", (e) => {
-    console.log("Submitted")
+    e.preventDefault()
+    // console.log("Submitted")
+
+    let billValue = document.querySelector("#billAmount")
+
 })
