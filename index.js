@@ -19,6 +19,8 @@ formSubmit.addEventListener("submit", (e) => {
     let twentyPercent = document.querySelector("#twentyChoice")
     let customPercent = document.querySelector("#custom")
 
+    let custom
+
     if(tenPercent.checked) {
         radioValue = 10;
         console.log("Radio Value: ",radioValue)
@@ -28,9 +30,8 @@ formSubmit.addEventListener("submit", (e) => {
     }else if(twentyPercent.checked){
         radioValue = 20;
         console.log("Radio Value: ",radioValue)
-    }else if(customPercent.checked){
-       let customTip = document.querySelector(".form_details")
-        console.log("customTip")
+    }else {
+
     }
 
 })
