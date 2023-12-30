@@ -29,7 +29,8 @@ formSubmit.addEventListener("submit", (e) => {
         radioValue = 20;
         console.log("Radio Value: ",radioValue)
     }else if(customPercent.checked){
-
+        document.querySelector("#form_details").classList.remove("custom_tip")
+        document.querySelector("#form_details").classList.remove("custom_tip")
     }
 
 })
