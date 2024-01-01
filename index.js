@@ -31,6 +31,11 @@ formSubmit.addEventListener("submit", (e) => {
 
         console.log(billValue, people)
 
+        tipAmount = 10 / 100 * billValue
+       let totalBillss = Number(tipAmount) + Number(billValue)
+        console.log(tipAmount )
+        console.log(totalBillss)
+
         // tipAmount = radioValue / 100 * billValue
         // totalBill = tipAmount + billValue
         // billPerPerson =totalBill/numberOfPeople.value
