@@ -14,4 +14,5 @@ function calculateForm(){
     const totalExpenses = bill + tipValue
     document.querySelector("#showTotalExpense").innerText += "GHS " + totalExpenses;
 
+    document.querySelector("#costPerPerson").innerText += "GHS " + tipValue
 }
