@@ -1,12 +1,8 @@
 function calculateForm(){
 
     const bill = Number(document.querySelector("#billAmount").value)
-    console.log(bill)
-    const percentageTip = Number(document.querySelector("input[name='tip']:checked"))
-    console.log(percentageTip)
+    const percentageTip = Number(document.querySelector("input[name='tip']:checked").value)
     const people = Number(document.querySelector("#numberOfPeople").value)
-    console.log(people)
-    console.log(bill)
 
 
     if(isNaN(bill) || bill <= 0 || !tipPercentageElement || isNaN(people) || people <= 0){
