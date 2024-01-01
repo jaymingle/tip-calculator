@@ -28,21 +28,26 @@ formSubmit.addEventListener("submit", (e) => {
 
     let numberOfPeople = document.querySelector("#numberOfPeople")
 
-    let totalBill = null
-    let tipAmount = null
-    let billPerPerson = null
+    let totalBill = 0
+    let tipAmount = 0
+    let billPerPerson = 0
 
     if(tenPercent.checked) {
         radioValue = 10;
 
-        tipAmount = (billValue / 100) * radioValue
-        totalBill = tipAmount + billValue.value
-        billPerPerson = totalBill/numberOfPeople.value
+        tipAmount = Number(radioValue / 100 * billValue.value)
+        totalBill = Number( tipAmount + billValue.value)
+        billPerPerson = Number(totalBill/numberOfPeople.value)
 
         console.log("Total Bill", totalBill)
         console.log("Tip Amount", tipAmount)
         console.log("Individual Bill", billPerPerson)
         console.log("People to Split Bill", numberOfPeople.value)
+
+        console.log("Tip Amount", typeof(tipAmount))
+        console.log("Total bill", typeof(totalBill))
+        console.log("Bill Per Person", typeof(billPerPerson))
+        // console.log("Tip Amount", typeof(tipAmount))
 
 
         console.log({
