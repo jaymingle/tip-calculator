@@ -36,13 +36,18 @@ formSubmit.addEventListener("submit", (e) => {
         radioValue = 10;
 
         tipAmount = (billValue / 100) * radioValue
-        totalBill = tipAmount + billValue
+        totalBill = tipAmount + billValue.value
         billPerPerson = totalBill/numberOfPeople.value
 
+        console.log("Total Bill", totalBill)
+        console.log("Tip Amount", tipAmount)
+        console.log("Individual Bill", billPerPerson)
+        console.log("People to Split Bill", numberOfPeople.value)
 
 
         console.log({
             people: numberOfPeople.value,
+            bill_amount: billValue.value,
             total_bill: totalBill,
             bill_per_person: billPerPerson
         })
@@ -56,6 +61,7 @@ formSubmit.addEventListener("submit", (e) => {
         // console.log("Radio Value: ",radioValue)
         console.log({
             people: numberOfPeople.value,
+            bill_amount: billValue,
             total_bill: totalBill,
             bill_per_person: billPerPerson
         })
@@ -69,11 +75,10 @@ formSubmit.addEventListener("submit", (e) => {
         // console.log("Radio Value: ",radioValue)
         console.log({
             people: numberOfPeople.value,
+            bill_amount: billValue,
             total_bill: totalBill,
             bill_per_person: billPerPerson
         })
-    }else {
-
     }
 
 })
