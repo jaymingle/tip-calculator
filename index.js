@@ -20,11 +20,11 @@ formSubmit.addEventListener("submit", (e) => {
 
     let customPercent = document.querySelector("#custom")
     let customTip = document.querySelector("#customTipButton")
-    customTip.addEventListener("click",function(e){
-        // e.preventDefault()
-
-        alert("Custom Tip")
-    })
+    // customTip.addEventListener("click",function(e){
+    //     // e.preventDefault()
+    //
+    //     alert("Custom Tip")
+    // })
 
     let numberOfPeople = document.querySelector("#numberOfPeople")
 
@@ -53,7 +53,12 @@ formSubmit.addEventListener("submit", (e) => {
         totalBill = tipAmount + billValue
         billPerPerson = totalBill/numberOfPeople.value
 
-        console.log("Radio Value: ",radioValue)
+        // console.log("Radio Value: ",radioValue)
+        console.log({
+            people: numberOfPeople.value,
+            total_bill: totalBill,
+            bill_per_person: billPerPerson
+        })
     }else if(twentyPercent.checked){
         radioValue = 20;
 
@@ -61,7 +66,12 @@ formSubmit.addEventListener("submit", (e) => {
         totalBill = tipAmount + billValue
         billPerPerson = totalBill/numberOfPeople.value
 
-        console.log("Radio Value: ",radioValue)
+        // console.log("Radio Value: ",radioValue)
+        console.log({
+            people: numberOfPeople.value,
+            total_bill: totalBill,
+            bill_per_person: billPerPerson
+        })
     }else {
 
     }
