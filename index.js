@@ -8,5 +8,7 @@ function calculateForm(){
     console.log(percentageTip)
     console.log(people)
 
+    const tipValue = Number(percentageTip) / 100 * Number(bill)
+    console.log(tipValue)
 
 }
