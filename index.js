@@ -9,10 +9,10 @@ function calculateForm(){
     console.log(people)
 
     const tipValue = Number(percentageTip) / 100 * Number(bill)
-    console.log(tipValue)
-
     const totalExpenses = bill + tipValue
-    document.querySelector("#showTotalExpense").innerText += "GHS " + totalExpenses;
+    const individualExpenses = totalExpenses / people;
 
-    document.querySelector("#costPerPerson").innerText += "GHS " + tipValue
+    document.querySelector("#showTotalExpense").innerText += "GHS " + totalExpenses;
+    document.querySelector("#tipValue").innerText += "GHS " + tipValue
+    document.querySelector("#costPerPerson").innerText += "GHS " + individualExpenses
 }
