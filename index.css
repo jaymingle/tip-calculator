@@ -100,4 +100,13 @@ button{
     margin-left: 50px;
 }
 
+#showTotalExpense{
+    text-align: center;
+    color: red;
+}
+
+#numberOfPeople{
+    margin-bottom: 20px;
+}
+
 

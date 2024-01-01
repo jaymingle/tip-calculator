@@ -10,6 +10,8 @@ function calculateForm(){
 
     const tipValue = Number(percentageTip) / 100 * Number(bill)
     console.log(tipValue)
-    const
+
+    const totalExpenses = bill + tipValue
+    document.querySelector("#showTotalExpense").innerText += "GHS " + totalExpenses;
 
 }
