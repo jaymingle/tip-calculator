@@ -23,11 +23,13 @@ formSubmit.addEventListener("submit", (e) => {
     let tipAmount = 0
     let billPerPerson = 0
 
+    console.log("Out Bill", totalBill)
+
     if(tenPercent.checked) {
         radioValue = 10;
 
         let billValue = bill.value
-        let people= numberOfPeople.value
+        let people= Number(numberOfPeople.value)
 
         console.log(billValue, people)
 
@@ -38,29 +40,11 @@ formSubmit.addEventListener("submit", (e) => {
         console.log(totalBill)
         console.log(billPerPerson)
 
-
-
-        // tipAmount = radioValue / 100 * billValue
-        // totalBill = tipAmount + billValue
-        // billPerPerson =totalBill/numberOfPeople.value
-        //
         console.log("Total Bill", totalBill)
         console.log("Tip Amount", tipAmount)
         console.log("Individual Bill", billPerPerson)
         console.log("People to Split Bill", people)
-        //
-        // console.log("Tip Amount", typeof(tipAmount))
-        // console.log("Total bill", typeof(totalBill))
-        // console.log("Bill Per Person", typeof(billPerPerson))
-        // // console.log("Tip Amount", typeof(tipAmount))
-        //
-        //
-        // console.log({
-        //     people: numberOfPeople.value,
-        //     bill_amount: billValue.value,
-        //     total_bill: totalBill,
-        //     bill_per_person: billPerPerson
-        // })
+
     }else if(fifteenPercent.checked){
         radioValue = 15;
 
@@ -90,5 +74,8 @@ formSubmit.addEventListener("submit", (e) => {
             bill_per_person: billPerPerson
         })
     }
+
+    console.log("After Bill", totalBill)
+
 
 })
