@@ -8,7 +8,7 @@ let twentyPercent = document.querySelector("#twentyChoice")
 let customPercent = document.querySelector("#custom")
 let customTip = document.querySelector("#customTipButton")
 
-let numberOfPeople = document.querySelector("#numberOfPeople").value
+let numberOfPeople = document.querySelector("#numberOfPeople")
 
 
 let radioValue = null
@@ -27,8 +27,9 @@ formSubmit.addEventListener("submit", (e) => {
         radioValue = 10;
 
         let billValue = bill.value
+        let people= numberOfPeople.value
 
-        console.log()
+        console.log(billValue, people)
 
         // tipAmount = radioValue / 100 * billValue
         // totalBill = tipAmount + billValue
