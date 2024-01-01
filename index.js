@@ -25,11 +25,13 @@ formSubmit.addEventListener("submit", (e) => {
 
     console.log("Out Bill", totalBill)
 
+    let billValue = bill.value
+    let people= Number(numberOfPeople.value)
+
+
+
     if(tenPercent.checked) {
         radioValue = 10;
-
-        let billValue = bill.value
-        let people= Number(numberOfPeople.value)
 
         console.log(billValue, people)
 
@@ -48,31 +50,56 @@ formSubmit.addEventListener("submit", (e) => {
     }else if(fifteenPercent.checked){
         radioValue = 15;
 
-        tipAmount = (billValue / 100) * radioValue
-        totalBill = tipAmount + billValue
-        billPerPerson = totalBill/numberOfPeople.value
+        // let billValue = bill.value
+        // let people= Number(numberOfPeople.value)
+
+        console.log(billValue, people)
+
+        tipAmount = 10 / 100 * billValue
+        totalBill = Number(tipAmount) + Number(billValue)
+        billPerPerson = Number(totalBill) / people
+        console.log(tipAmount )
+        console.log(totalBill)
+        console.log(billPerPerson)
+
+        console.log("Total Bill", totalBill)
+        console.log("Tip Amount", tipAmount)
+        console.log("Individual Bill", billPerPerson)
+        console.log("People to Split Bill", people)
 
         // console.log("Radio Value: ",radioValue)
-        console.log({
-            people: numberOfPeople.value,
-            bill_amount: billValue,
-            total_bill: totalBill,
-            bill_per_person: billPerPerson
-        })
+        // console.log({
+        //     people: numberOfPeople.value,
+        //     bill_amount: billValue,
+        //     total_bill: totalBill,
+        //     bill_per_person: billPerPerson
+        // })
     }else if(twentyPercent.checked){
         radioValue = 20;
+        // let billValue = bill.value
+        // let people= Number(numberOfPeople.value)
 
-        tipAmount = (billValue / 100) * radioValue
-        totalBill = tipAmount + billValue
-        billPerPerson = totalBill/numberOfPeople.value
+        console.log(billValue, people)
+
+        tipAmount = 10 / 100 * billValue
+        totalBill = Number(tipAmount) + Number(billValue)
+        billPerPerson = Number(totalBill) / people
+        console.log(tipAmount )
+        console.log(totalBill)
+        console.log(billPerPerson)
+
+        console.log("Total Bill", totalBill)
+        console.log("Tip Amount", tipAmount)
+        console.log("Individual Bill", billPerPerson)
+        console.log("People to Split Bill", people)
 
         // console.log("Radio Value: ",radioValue)
-        console.log({
-            people: numberOfPeople.value,
-            bill_amount: billValue,
-            total_bill: totalBill,
-            bill_per_person: billPerPerson
-        })
+        // console.log({
+        //     people: numberOfPeople.value,
+        //     bill_amount: billValue,
+        //     total_bill: totalBill,
+        //     bill_per_person: billPerPerson
+        // })
     }
 
     console.log("After Bill", totalBill)
