@@ -109,4 +109,9 @@ button{
     margin-bottom: 20px;
 }
 
+#costPerPerson{
+    color: yellow;
+    text-align: center;
+}
+
 
