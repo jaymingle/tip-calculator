@@ -8,7 +8,7 @@ function calculateForm(){
     // console.log(percentageTip)
     // console.log(people)
 
-    if( !percentageTip){
+    if(isNaN(bill) || bill <= 0 || !tipPercentageElement || isNaN(people) || people <= 0){
         alert("Fill the forms")
         return
     }
