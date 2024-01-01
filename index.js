@@ -1,8 +1,11 @@
 function calculateForm(){
 
     const bill = Number(document.querySelector("#billAmount").value)
-    const percentageTip = Number(document.querySelector("input[name='tip']:checked").value)
+    console.log(bill)
+    const percentageTip = Number(document.querySelector("input[name='tip']:checked"))
+    console.log(percentageTip)
     const people = Number(document.querySelector("#numberOfPeople").value)
+    console.log(people)
     console.log(bill)
 
 
