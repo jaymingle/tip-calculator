@@ -33,8 +33,10 @@ formSubmit.addEventListener("submit", (e) => {
 
         tipAmount = 10 / 100 * billValue
         totalBill = Number(tipAmount) + Number(billValue)
+        billPerPerson = Number(totalBill) / people
         console.log(tipAmount )
         console.log(totalBill)
+        console.log(billPerPerson)
 
 
 
@@ -42,10 +44,10 @@ formSubmit.addEventListener("submit", (e) => {
         // totalBill = tipAmount + billValue
         // billPerPerson =totalBill/numberOfPeople.value
         //
-        // console.log("Total Bill", totalBill)
-        // console.log("Tip Amount", tipAmount)
-        // console.log("Individual Bill", billPerPerson)
-        // console.log("People to Split Bill", numberOfPeople.value)
+        console.log("Total Bill", totalBill)
+        console.log("Tip Amount", tipAmount)
+        console.log("Individual Bill", billPerPerson)
+        console.log("People to Split Bill", people)
         //
         // console.log("Tip Amount", typeof(tipAmount))
         // console.log("Total bill", typeof(totalBill))
