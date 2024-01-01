@@ -8,10 +8,10 @@ function calculateForm(){
     // console.log(percentageTip)
     // console.log(people)
 
-    // if(!bill || !percentageTip || people){
-    //     alert("Fill the forms")
-    //     return
-    // }
+    if( !percentageTip){
+        alert("Fill the forms")
+        return
+    }
 
     const tipValue = Number(percentageTip) / 100 * Number(bill)
     const totalExpenses = bill + tipValue
