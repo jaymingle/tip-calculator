@@ -26,27 +26,31 @@ formSubmit.addEventListener("submit", (e) => {
     if(tenPercent.checked) {
         radioValue = 10;
 
-        tipAmount = radioValue / 100 * billValue
-        totalBill = tipAmount + billValue
-        billPerPerson =totalBill/numberOfPeople.value
+        let billValue = bill.value
 
-        console.log("Total Bill", totalBill)
-        console.log("Tip Amount", tipAmount)
-        console.log("Individual Bill", billPerPerson)
-        console.log("People to Split Bill", numberOfPeople.value)
+        console.log()
 
-        console.log("Tip Amount", typeof(tipAmount))
-        console.log("Total bill", typeof(totalBill))
-        console.log("Bill Per Person", typeof(billPerPerson))
+        // tipAmount = radioValue / 100 * billValue
+        // totalBill = tipAmount + billValue
+        // billPerPerson =totalBill/numberOfPeople.value
+        //
+        // console.log("Total Bill", totalBill)
+        // console.log("Tip Amount", tipAmount)
+        // console.log("Individual Bill", billPerPerson)
+        // console.log("People to Split Bill", numberOfPeople.value)
+        //
         // console.log("Tip Amount", typeof(tipAmount))
-
-
-        console.log({
-            people: numberOfPeople.value,
-            bill_amount: billValue.value,
-            total_bill: totalBill,
-            bill_per_person: billPerPerson
-        })
+        // console.log("Total bill", typeof(totalBill))
+        // console.log("Bill Per Person", typeof(billPerPerson))
+        // // console.log("Tip Amount", typeof(tipAmount))
+        //
+        //
+        // console.log({
+        //     people: numberOfPeople.value,
+        //     bill_amount: billValue.value,
+        //     total_bill: totalBill,
+        //     bill_per_person: billPerPerson
+        // })
     }else if(fifteenPercent.checked){
         radioValue = 15;
 
